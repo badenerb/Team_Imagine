@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BDC2FEC629CE52E800E841AA /* ForParentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC2FEC529CE52E800E841AA /* ForParentsViewController.swift */; };
 		BDC3F86A29B6AA1600E619C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC3F86929B6AA1600E619C0 /* AppDelegate.swift */; };
 		BDC3F86C29B6AA1600E619C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC3F86B29B6AA1600E619C0 /* SceneDelegate.swift */; };
 		BDC3F86E29B6AA1600E619C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC3F86D29B6AA1600E619C0 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BDC2FEC529CE52E800E841AA /* ForParentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForParentsViewController.swift; sourceTree = "<group>"; };
 		BDC3F86629B6AA1600E619C0 /* Team_Imagine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Team_Imagine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDC3F86929B6AA1600E619C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDC3F86B29B6AA1600E619C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 		BDC3F85D29B6AA1600E619C0 = {
 			isa = PBXGroup;
 			children = (
+				BDC2FEC529CE52E800E841AA /* ForParentsViewController.swift */,
 				BDC3F86829B6AA1600E619C0 /* Team_Imagine */,
 				BDC3F86729B6AA1600E619C0 /* Products */,
 			);
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDC2FEC629CE52E800E841AA /* ForParentsViewController.swift in Sources */,
 				BDC3F86E29B6AA1600E619C0 /* ViewController.swift in Sources */,
 				BDC3F86A29B6AA1600E619C0 /* AppDelegate.swift in Sources */,
 				BDC3F86C29B6AA1600E619C0 /* SceneDelegate.swift in Sources */,
