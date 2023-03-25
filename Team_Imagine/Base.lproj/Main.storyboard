@@ -35,6 +35,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Learn">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="6Gz-oh-u6r" kind="show" id="Afl-s5-BzV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRp-Mu-xbA">
                                 <rect key="frame" x="104" y="748" width="221" height="63"/>
@@ -55,6 +58,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="19.626168224299064" y="3.2397408207343417"/>
+        </scene>
+        <!--Learn Mode View-->
+        <scene sceneID="Ygq-Pf-ALN">
+            <objects>
+                <viewController id="6Gz-oh-u6r" customClass="LearnModeView" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YO6-1s-0Tj">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="869"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dO1-h1-KIC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UWT-5w-55n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ddi-e5-w7G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="931" y="8"/>
         </scene>
         <!--For Parents View Controller-->
         <scene sceneID="yjW-mp-CZc">
@@ -79,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eDI-IW-P68" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="878.62595419847321" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="-238" y="737"/>
         </scene>
     </scenes>
     <resources>
