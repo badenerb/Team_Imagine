@@ -130,18 +130,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXH-hu-Qjf">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXH-hu-Qjf">
                                 <rect key="frame" x="33" y="806" width="162" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="References"/>
+                                <buttonConfiguration key="configuration" style="filled" title="References" buttonSize="medium"/>
                                 <connections>
                                     <action selector="References:" destination="dc5-za-tW5" eventType="touchUpInside" id="NFP-Zd-CLP"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXy-uV-I5h">
-                                <rect key="frame" x="20" y="141" width="388" height="617"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ml-Qb-1rW">
+                                <rect key="frame" x="230" y="806" width="162" height="41"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="GitHub" buttonSize="medium"/>
+                                <connections>
+                                    <action selector="GitHubOpen:" destination="dc5-za-tW5" eventType="touchUpInside" id="BkN-lK-7kE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="wordWrap" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="387" translatesAutoresizingMaskIntoConstraints="NO" id="BXy-uV-I5h">
+                                <rect key="frame" x="20" y="141" width="388" height="628"/>
                                 <mutableString key="text">Welcome to our ABC Learning app! Our app is designed to help children learn the alphabet through fun and engaging audio and visual cues. Here's a little bit about what you can expect from our app:
 
 Audio and Visual Learning: Our app combines both audio and visual cues to help children learn the alphabet. Each letter is accompanied by a colorful and engaging visual that helps children associate the letter with an object or concept. The audio provides a clear and easy-to-follow pronunciation of each letter.
@@ -153,21 +159,21 @@ We hope that you and your child enjoy using our app to learn the alphabet! If yo
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ml-Qb-1rW">
-                                <rect key="frame" x="230" y="806" width="162" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="GitHub"/>
-                                <connections>
-                                    <action selector="GitHubOpen:" destination="dc5-za-tW5" eventType="touchUpInside" id="BkN-lK-7kE"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5UL-A0-xZd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="sXH-hu-Qjf" firstAttribute="leading" secondItem="5UL-A0-xZd" secondAttribute="leading" constant="33" id="0Qq-qi-PKV"/>
                             <constraint firstItem="UUI-ZA-jwk" firstAttribute="centerX" secondItem="5UL-A0-xZd" secondAttribute="centerX" id="6eV-Yt-kHt"/>
+                            <constraint firstItem="BXy-uV-I5h" firstAttribute="centerX" secondItem="5UL-A0-xZd" secondAttribute="centerX" id="F6q-df-XW4"/>
+                            <constraint firstItem="5UL-A0-xZd" firstAttribute="bottom" secondItem="6ml-Qb-1rW" secondAttribute="bottom" constant="45" id="L1K-S4-J8k"/>
+                            <constraint firstItem="BXy-uV-I5h" firstAttribute="top" secondItem="5UL-A0-xZd" secondAttribute="top" constant="50" id="VXT-Lc-zzy"/>
+                            <constraint firstItem="6ml-Qb-1rW" firstAttribute="leading" secondItem="sXH-hu-Qjf" secondAttribute="trailing" constant="35" id="ZPN-Hf-Ygy"/>
                             <constraint firstItem="UUI-ZA-jwk" firstAttribute="top" secondItem="5UL-A0-xZd" secondAttribute="top" id="aLN-Ue-aNu"/>
+                            <constraint firstItem="5UL-A0-xZd" firstAttribute="trailing" secondItem="6ml-Qb-1rW" secondAttribute="trailing" constant="36" id="qST-CO-4F8"/>
+                            <constraint firstItem="5UL-A0-xZd" firstAttribute="bottom" secondItem="sXH-hu-Qjf" secondAttribute="bottom" constant="45" id="yZZ-PK-jLT"/>
+                            <constraint firstItem="6ml-Qb-1rW" firstAttribute="leading" secondItem="5UL-A0-xZd" secondAttribute="leading" constant="230" id="ykd-hA-0OJ"/>
+                            <constraint firstItem="sXH-hu-Qjf" firstAttribute="width" secondItem="6ml-Qb-1rW" secondAttribute="width" id="zu9-cz-pOZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WYG-a3-R6h"/>
