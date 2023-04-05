@@ -42,20 +42,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="6Gz-oh-u6r" kind="show" id="Afl-s5-BzV"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRp-Mu-xbA">
-                                <rect key="frame" x="104" y="748" width="221" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="For Parents">
-                                    <fontDescription key="titleFontDescription" type="italicSystem" pointSize="30"/>
-                                    <color key="baseForegroundColor" systemColor="labelColor"/>
-                                    <color key="baseBackgroundColor" name="AccentColor"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="dc5-za-tW5" kind="show" id="mR0-K9-tBl"/>
+                                    <segue destination="pyh-kg-jWw" kind="show" id="ngf-Pp-4kD"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="IconTransparent" translatesAutoresizingMaskIntoConstraints="NO" id="HBL-a4-kkd">
@@ -66,6 +53,20 @@
                                     <outletCollection property="gestureRecognizers" destination="ens-M7-cIU" appends="YES" id="Azp-8M-Odi"/>
                                 </connections>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5o-j1-Edp">
+                                <rect key="frame" x="120" y="759" width="189" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65357905549999995" green="0.57409168079999995" blue="0.80859043620000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.65357905551054651" green="0.57409168082056017" blue="0.80859043622257731" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="For Parents" subtitle="App Information" titleAlignment="center">
+                                    <fontDescription key="titleFontDescription" type="italicSystem" pointSize="27"/>
+                                    <color key="baseBackgroundColor" red="0.65357905549999995" green="0.57409168079999995" blue="0.80859043620000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="dc5-za-tW5" kind="show" id="Uuu-x4-3Ag"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -84,21 +85,21 @@
             </objects>
             <point key="canvasLocation" x="919.62616822429902" y="3.2397408207343417"/>
         </scene>
-        <!--Learn Mode View-->
-        <scene sceneID="Ygq-Pf-ALN">
+        <!--Learn View Controller-->
+        <scene sceneID="qIG-yi-Nhj">
             <objects>
-                <viewController id="6Gz-oh-u6r" customClass="LearnModeView" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="YO6-1s-0Tj">
+                <viewController id="pyh-kg-jWw" customClass="LearnViewController" customModule="Team_Imagine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9tT-IP-unI">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="dO1-h1-KIC"/>
+                        <viewLayoutGuide key="safeArea" id="1YD-dJ-emG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="UWT-5w-55n"/>
+                    <navigationItem key="navigationItem" id="Wvq-mS-2JQ"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ddi-e5-w7G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XIP-23-FJL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1859" y="-168"/>
+            <point key="canvasLocation" x="1897" y="-238"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="YBc-eQ-KNg">
@@ -180,7 +181,7 @@ We hope that you and your child enjoy using our app to learn the alphabet! If yo
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eDI-IW-P68" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-238.31775700934577" y="736.71706263498925"/>
+            <point key="canvasLocation" x="920" y="763"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GVS-mv-vKt">
@@ -204,12 +205,6 @@ We hope that you and your child enjoy using our app to learn the alphabet! If yo
     <resources>
         <image name="IconTransparent" width="1024" height="1024"/>
         <image name="triangles" width="1280" height="718"/>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

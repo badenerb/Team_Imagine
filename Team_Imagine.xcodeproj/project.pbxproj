@@ -15,6 +15,7 @@
 		BDC3F87129B6AA1600E619C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDC3F86F29B6AA1600E619C0 /* Main.storyboard */; };
 		BDC3F87329B6AA1900E619C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDC3F87229B6AA1900E619C0 /* Assets.xcassets */; };
 		BDC3F87629B6AA1900E619C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDC3F87429B6AA1900E619C0 /* LaunchScreen.storyboard */; };
+		BDF8A60929DE0304006B7173 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF8A60829DE0304006B7173 /* LearnViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BDC3F87229B6AA1900E619C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDC3F87529B6AA1900E619C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDC3F87729B6AA1900E619C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDF8A60829DE0304006B7173 /* LearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,8 +46,6 @@
 		BDC3F85D29B6AA1600E619C0 = {
 			isa = PBXGroup;
 			children = (
-				BDA6542C29DD2C59005CE2EF /* QuizViewController.swift */,
-				BDC2FEC529CE52E800E841AA /* ForParentsViewController.swift */,
 				BDC3F86829B6AA1600E619C0 /* Team_Imagine */,
 				BDC3F86729B6AA1600E619C0 /* Products */,
 			);
@@ -62,7 +62,10 @@
 		BDC3F86829B6AA1600E619C0 /* Team_Imagine */ = {
 			isa = PBXGroup;
 			children = (
+				BDF8A60829DE0304006B7173 /* LearnViewController.swift */,
+				BDC2FEC529CE52E800E841AA /* ForParentsViewController.swift */,
 				BDC3F86929B6AA1600E619C0 /* AppDelegate.swift */,
+				BDA6542C29DD2C59005CE2EF /* QuizViewController.swift */,
 				BDC3F86B29B6AA1600E619C0 /* SceneDelegate.swift */,
 				BDC3F86D29B6AA1600E619C0 /* ViewController.swift */,
 				BDC3F86F29B6AA1600E619C0 /* Main.storyboard */,
@@ -149,6 +152,7 @@
 				BDC3F86E29B6AA1600E619C0 /* ViewController.swift in Sources */,
 				BDC3F86A29B6AA1600E619C0 /* AppDelegate.swift in Sources */,
 				BDC3F86C29B6AA1600E619C0 /* SceneDelegate.swift in Sources */,
+				BDF8A60929DE0304006B7173 /* LearnViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
