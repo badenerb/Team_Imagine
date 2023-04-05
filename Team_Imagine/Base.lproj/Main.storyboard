@@ -58,9 +58,13 @@
                                     <segue destination="dc5-za-tW5" kind="show" identifier="ForParentsSegue" id="a3M-0E-YMu"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="IconTransparent" translatesAutoresizingMaskIntoConstraints="NO" id="HBL-a4-kkd">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="IconTransparent" translatesAutoresizingMaskIntoConstraints="NO" id="HBL-a4-kkd">
                                 <rect key="frame" x="82" y="91" width="264" height="261"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ens-M7-cIU" appends="YES" id="Azp-8M-Odi"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -72,6 +76,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ens-M7-cIU">
+                    <connections>
+                        <action selector="tapLogo:" destination="BYZ-38-t0r" id="2Rs-X6-zRR"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="919.62616822429902" y="3.2397408207343417"/>
         </scene>
