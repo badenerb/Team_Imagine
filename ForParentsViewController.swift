@@ -15,8 +15,20 @@ class ForParentsViewController: UIViewController {
 
 
 
-        // Do any additional setup after loading the view.
+    @IBAction func References(_ sender: Any) {
+        if let url = URL(string: "https://www.google.com"//Replace this with the references pdf in our github folder
+        )
+        {
+            UIApplication.shared.open(url)
+        }
     }
+    
+    @IBAction func GitHubOpen(_ sender: Any) {
+        if let url = URL(string: "https://github.com/badenerb/Team_Imagine") {
+            UIApplication.shared.open(url)
+        }
+    }
+}
     
     /*
     // MARK: - Navigation

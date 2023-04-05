@@ -131,13 +131,35 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXH-hu-Qjf">
-                                <rect key="frame" x="136" y="216" width="157" height="107"/>
+                                <rect key="frame" x="33" y="806" width="162" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="References"/>
                                 <connections>
-                                    <action selector="referencesTapped:" destination="dc5-za-tW5" eventType="touchUpInside" id="hF2-dN-mrq"/>
-                                    <segue destination="RDD-KL-EP8" kind="show" id="7IB-3i-PD9"/>
+                                    <action selector="References:" destination="dc5-za-tW5" eventType="touchUpInside" id="NFP-Zd-CLP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXy-uV-I5h">
+                                <rect key="frame" x="20" y="141" width="388" height="617"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Welcome to our ABC Learning app! Our app is designed to help children learn the alphabet through fun and engaging audio and visual cues. Here's a little bit about what you can expect from our app:
+
+Audio and Visual Learning: Our app combines both audio and visual cues to help children learn the alphabet. Each letter is accompanied by a colorful and engaging visual that helps children associate the letter with an object or concept. The audio provides a clear and easy-to-follow pronunciation of each letter.
+
+Interactive Learning: Our app is designed to be interactive and engaging for children. The app includes a variety of games and activities that help reinforce what children are learning. Children can practice identifying letters, matching letters to objects, and even spelling simple words.Safe and Kid-Friendly: Our app is completely safe and kid-friendly, with no ads or inappropriate content. Parents can rest easy knowing that their child is learning in a safe and secure environment.
+
+We hope that you and your child enjoy using our app to learn the alphabet! If you have any questions or feedback, please don't hesitate to contact us. Thank you for choosing our ABC Learning app.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ml-Qb-1rW">
+                                <rect key="frame" x="230" y="806" width="162" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="GitHub"/>
+                                <connections>
+                                    <action selector="GitHubOpen:" destination="dc5-za-tW5" eventType="touchUpInside" id="BkN-lK-7kE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -153,22 +175,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eDI-IW-P68" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-238.31775700934577" y="736.71706263498925"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="3Sl-me-nWw">
-            <objects>
-                <viewController id="RDD-KL-EP8" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="eeD-0s-2R2" customClass="pdf">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="uVH-j1-qm1"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="xQQ-xr-8a4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f6z-9w-MiP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-238" y="1514"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GVS-mv-vKt">
