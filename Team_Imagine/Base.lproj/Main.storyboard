@@ -31,7 +31,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="XJ4-ik-sYw" kind="show" id="TyV-hM-sOc"/>
+                                    <segue destination="y2p-YV-h34" kind="show" id="yoC-4X-aHP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hV2-7y-THY">
@@ -55,7 +55,7 @@
                                     <color key="baseBackgroundColor" name="AccentColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="dc5-za-tW5" kind="show" identifier="ForParentsSegue" id="a3M-0E-YMu"/>
+                                    <segue destination="dc5-za-tW5" kind="show" id="mR0-K9-tBl"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="IconTransparent" translatesAutoresizingMaskIntoConstraints="NO" id="HBL-a4-kkd">
@@ -84,22 +84,6 @@
             </objects>
             <point key="canvasLocation" x="919.62616822429902" y="3.2397408207343417"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="RKa-bE-HCm">
-            <objects>
-                <viewController id="XJ4-ik-sYw" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="LeE-Pk-Vr8">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="62T-4f-gze"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="20c-jU-Omz"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tGf-pX-4AI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1946" y="575"/>
-        </scene>
         <!--Learn Mode View-->
         <scene sceneID="Ygq-Pf-ALN">
             <objects>
@@ -116,6 +100,22 @@
             </objects>
             <point key="canvasLocation" x="1859" y="-168"/>
         </scene>
+        <!--Quiz View Controller-->
+        <scene sceneID="YBc-eQ-KNg">
+            <objects>
+                <viewController id="y2p-YV-h34" customClass="QuizViewController" customModule="Team_Imagine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xGt-mR-4ea">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="GHb-pt-Ur2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="brf-TS-zfl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cVB-ii-dsO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1880" y="524"/>
+        </scene>
         <!--For Parents View Controller-->
         <scene sceneID="yjW-mp-CZc">
             <objects>
@@ -130,6 +130,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXH-hu-Qjf">
+                                <rect key="frame" x="136" y="216" width="157" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="References"/>
+                                <connections>
+                                    <action selector="referencesTapped:" destination="dc5-za-tW5" eventType="touchUpInside" id="hF2-dN-mrq"/>
+                                    <segue destination="RDD-KL-EP8" kind="show" id="7IB-3i-PD9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5UL-A0-xZd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -142,7 +152,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eDI-IW-P68" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-238" y="737"/>
+            <point key="canvasLocation" x="-238.31775700934577" y="736.71706263498925"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3Sl-me-nWw">
+            <objects>
+                <viewController id="RDD-KL-EP8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eeD-0s-2R2" customClass="pdf">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="uVH-j1-qm1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xQQ-xr-8a4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f6z-9w-MiP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-238" y="1514"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GVS-mv-vKt">

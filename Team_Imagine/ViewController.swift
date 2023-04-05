@@ -16,19 +16,22 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         //Test
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        bounceAnimation()
+    }
+    //this function creates a bouncing animation that makes the logo appear as it is growing and shrinking. It does this forever.
     func bounceAnimation() {
         let animation = CAKeyframeAnimation(keyPath: "transform.scale")
         animation.values = [1.0, 1.2, 0.8, 1.3, 0.9, 1.15, 1.0]
         animation.duration = 20
         animation.calculationMode = .cubic
-        //animation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
         animation.repeatCount = .infinity
         self.logo.layer.add(animation, forKey: "bounceAnimation")
     }
     
+    //When the logo is tapped it will spin. If the logo is currently spinning though, the logo will not spin.
     @IBAction func tapLogo(_ sender: UITapGestureRecognizer) {
-        
         if check{
             check = false
             let animation = CABasicAnimation(keyPath: "transform.rotation")

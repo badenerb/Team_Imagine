@@ -1,23 +1,21 @@
 //
-//  ForParentsViewController.swift
+//  QuizViewController.swift
 //  Team_Imagine
 //
-//  Created by Krystie Weckesser on 2023-03-24.
+//  Created by Krystie Weckesser on 2023-04-04.
 //
-import UIKit
-import PDFKit
 
-class ForParentsViewController: UIViewController {
-   
+import UIKit
+
+class QuizViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        }
-
-
 
         // Do any additional setup after loading the view.
     }
     
+
     /*
     // MARK: - Navigation
 
@@ -26,6 +24,6 @@ class ForParentsViewController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    *///Eboni was here
+    */
 
-
+}
