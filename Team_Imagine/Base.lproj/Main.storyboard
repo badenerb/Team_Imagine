@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RNX-JX-crh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RNX-JX-crh">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,9 +24,11 @@
                                     <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
                                 </accessibility>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZr-LT-Khe">
-                                <rect key="frame" x="127" y="579" width="174" height="81"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZr-LT-Khe">
+                                <rect key="frame" x="127" y="579" width="174" height="52.333333333333371"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52.329999999999998" id="FUY-Mv-tjI"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Quiz">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
@@ -34,9 +37,13 @@
                                     <segue destination="y2p-YV-h34" kind="show" id="yoC-4X-aHP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hV2-7y-THY">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hV2-7y-THY">
                                 <rect key="frame" x="127" y="433" width="174" height="81"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hV2-7y-THY" secondAttribute="height" multiplier="58:27" id="Tor-V4-gaU"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="174" id="UJU-J1-HBZ"/>
+                                    <constraint firstAttribute="height" constant="81" id="ksa-l0-Ud0"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Learn">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
@@ -45,22 +52,33 @@
                                     <segue destination="pyh-kg-jWw" kind="show" id="ngf-Pp-4kD"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="IconTransparent" translatesAutoresizingMaskIntoConstraints="NO" id="HBL-a4-kkd">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" image="IconTransparent" translatesAutoresizingMaskIntoConstraints="NO" id="HBL-a4-kkd">
                                 <rect key="frame" x="82" y="91" width="264" height="261"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="264" id="OQk-k1-OhP"/>
+                                    <constraint firstAttribute="height" constant="261" id="y3w-2W-x7c"/>
+                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="ens-M7-cIU" appends="YES" id="Azp-8M-Odi"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5o-j1-Edp">
-                                <rect key="frame" x="120" y="759" width="189" height="88"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5o-j1-Edp">
+                                <rect key="frame" x="120" y="758" width="189" height="63"/>
                                 <color key="backgroundColor" red="0.65357905549999995" green="0.57409168079999995" blue="0.80859043620000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="c5o-j1-Edp" secondAttribute="height" multiplier="3:1" id="DQ3-gX-9ru"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="189" id="I73-Uz-Cd8"/>
+                                    <constraint firstAttribute="height" constant="63" id="JBI-Hf-y65"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="63" id="Qcr-jw-X4G"/>
+                                    <constraint firstAttribute="width" secondItem="c5o-j1-Edp" secondAttribute="height" multiplier="3:1" id="gVJ-fV-HIb"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="189" id="laG-IS-hu8"/>
+                                </constraints>
                                 <color key="tintColor" red="0.65357905551054651" green="0.57409168082056017" blue="0.80859043622257731" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="For Parents" subtitle="App Information" titleAlignment="center">
-                                    <fontDescription key="titleFontDescription" type="italicSystem" pointSize="27"/>
+                                    <fontDescription key="titleFontDescription" type="italicSystem" pointSize="22"/>
+                                    <fontDescription key="subtitleFontDescription" type="italicSystem" pointSize="15"/>
                                     <color key="baseBackgroundColor" red="0.65357905549999995" green="0.57409168079999995" blue="0.80859043620000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -70,6 +88,22 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fZr-LT-Khe" firstAttribute="top" secondItem="hV2-7y-THY" secondAttribute="bottom" constant="65" id="4Q8-rg-Vhv"/>
+                            <constraint firstItem="HBL-a4-kkd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="6Un-ZQ-bXa"/>
+                            <constraint firstItem="fZr-LT-Khe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="127" id="C1S-df-9Ap"/>
+                            <constraint firstItem="HBL-a4-kkd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="VVd-vl-nru"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fZr-LT-Khe" secondAttribute="trailing" constant="127" id="Y0q-fE-b1A"/>
+                            <constraint firstItem="hV2-7y-THY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="127" id="YXZ-xJ-LNE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hV2-7y-THY" secondAttribute="trailing" constant="127" id="Yvg-nl-A3U"/>
+                            <constraint firstItem="hV2-7y-THY" firstAttribute="top" secondItem="HBL-a4-kkd" secondAttribute="bottom" constant="81" id="dbh-O6-7yw"/>
+                            <constraint firstItem="c5o-j1-Edp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="g5x-fR-T32"/>
+                            <constraint firstItem="fZr-LT-Khe" firstAttribute="top" secondItem="hV2-7y-THY" secondAttribute="bottom" constant="65" id="hGT-jf-Q6a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="c5o-j1-Edp" secondAttribute="bottom" constant="71" id="hcU-Sz-6z6"/>
+                            <constraint firstItem="hV2-7y-THY" firstAttribute="top" secondItem="HBL-a4-kkd" secondAttribute="bottom" constant="81" id="k1w-4J-Rdm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HBL-a4-kkd" secondAttribute="trailing" constant="82" id="lB3-Nc-f6T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c5o-j1-Edp" secondAttribute="trailing" constant="119" id="rbx-OD-1BA"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ci1-xT-GW8"/>
                     <connections>
@@ -126,54 +160,66 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For Parents" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUI-ZA-jwk">
-                                <rect key="frame" x="130" y="91" width="168" height="42"/>
+                                <rect key="frame" x="129.66666666666666" y="105" width="167.99999999999997" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXH-hu-Qjf">
-                                <rect key="frame" x="33" y="806" width="162" height="41"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="References" buttonSize="medium"/>
-                                <connections>
-                                    <action selector="References:" destination="dc5-za-tW5" eventType="touchUpInside" id="NFP-Zd-CLP"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ml-Qb-1rW">
-                                <rect key="frame" x="230" y="806" width="162" height="41"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ml-Qb-1rW">
+                                <rect key="frame" x="136" y="830" width="162" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6ml-Qb-1rW" secondAttribute="height" multiplier="81:17" id="uT1-ax-71C"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="GitHub" buttonSize="medium"/>
                                 <connections>
                                     <action selector="GitHubOpen:" destination="dc5-za-tW5" eventType="touchUpInside" id="BkN-lK-7kE"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="wordWrap" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="387" translatesAutoresizingMaskIntoConstraints="NO" id="BXy-uV-I5h">
-                                <rect key="frame" x="20" y="141" width="388" height="628"/>
-                                <mutableString key="text">Welcome to our ABC Learning app! Our app is designed to help children learn the alphabet through fun and engaging audio and visual cues. Here's a little bit about what you can expect from our app:
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="387" translatesAutoresizingMaskIntoConstraints="NO" id="BXy-uV-I5h">
+                                <rect key="frame" x="20" y="167" width="387" height="539"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="387" id="yTJ-3G-0SX"/>
+                                </constraints>
+                                <string key="text">Welcome to our ABC Learning app! Our app is designed to help children learn the alphabet through fun and engaging audio and visual cues. Here's a little bit about what you can expect from our app:
 
 Audio and Visual Learning: Our app combines both audio and visual cues to help children learn the alphabet. Each letter is accompanied by a colorful and engaging visual that helps children associate the letter with an object or concept. The audio provides a clear and easy-to-follow pronunciation of each letter.
 
 Interactive Learning: Our app is designed to be interactive and engaging for children. The app includes a variety of games and activities that help reinforce what children are learning. Children can practice identifying letters, matching letters to objects, and even spelling simple words.Safe and Kid-Friendly: Our app is completely safe and kid-friendly, with no ads or inappropriate content. Parents can rest easy knowing that their child is learning in a safe and secure environment.
 
-We hope that you and your child enjoy using our app to learn the alphabet! If you have any questions or feedback, please don't hesitate to contact us. Thank you for choosing our ABC Learning app.</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+We hope that you and your child enjoy using our app to learn the alphabet! If you have any questions or feedback, please don't hesitate to contact us. Thank you for choosing our ABC Learning app.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXH-hu-Qjf">
+                                <rect key="frame" x="136" y="762" width="162" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sXH-hu-Qjf" secondAttribute="height" multiplier="81:17" id="BsH-cS-qxz"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="References" buttonSize="medium"/>
+                                <connections>
+                                    <action selector="References:" destination="dc5-za-tW5" eventType="touchUpInside" id="NFP-Zd-CLP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5UL-A0-xZd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="sXH-hu-Qjf" firstAttribute="leading" secondItem="5UL-A0-xZd" secondAttribute="leading" constant="33" id="0Qq-qi-PKV"/>
+                            <constraint firstItem="sXH-hu-Qjf" firstAttribute="leading" secondItem="5UL-A0-xZd" secondAttribute="leading" constant="136" id="0Qq-qi-PKV"/>
+                            <constraint firstItem="BXy-uV-I5h" firstAttribute="top" secondItem="UUI-ZA-jwk" secondAttribute="bottom" constant="20" id="2Re-vD-WEV"/>
                             <constraint firstItem="UUI-ZA-jwk" firstAttribute="centerX" secondItem="5UL-A0-xZd" secondAttribute="centerX" id="6eV-Yt-kHt"/>
-                            <constraint firstItem="BXy-uV-I5h" firstAttribute="centerX" secondItem="5UL-A0-xZd" secondAttribute="centerX" id="F6q-df-XW4"/>
-                            <constraint firstItem="5UL-A0-xZd" firstAttribute="bottom" secondItem="6ml-Qb-1rW" secondAttribute="bottom" constant="45" id="L1K-S4-J8k"/>
-                            <constraint firstItem="BXy-uV-I5h" firstAttribute="top" secondItem="5UL-A0-xZd" secondAttribute="top" constant="50" id="VXT-Lc-zzy"/>
-                            <constraint firstItem="6ml-Qb-1rW" firstAttribute="leading" secondItem="sXH-hu-Qjf" secondAttribute="trailing" constant="35" id="ZPN-Hf-Ygy"/>
-                            <constraint firstItem="UUI-ZA-jwk" firstAttribute="top" secondItem="5UL-A0-xZd" secondAttribute="top" id="aLN-Ue-aNu"/>
-                            <constraint firstItem="5UL-A0-xZd" firstAttribute="trailing" secondItem="6ml-Qb-1rW" secondAttribute="trailing" constant="36" id="qST-CO-4F8"/>
-                            <constraint firstItem="5UL-A0-xZd" firstAttribute="bottom" secondItem="sXH-hu-Qjf" secondAttribute="bottom" constant="45" id="yZZ-PK-jLT"/>
-                            <constraint firstItem="6ml-Qb-1rW" firstAttribute="leading" secondItem="5UL-A0-xZd" secondAttribute="leading" constant="230" id="ykd-hA-0OJ"/>
+                            <constraint firstItem="6ml-Qb-1rW" firstAttribute="top" secondItem="BXy-uV-I5h" secondAttribute="bottom" constant="124" id="FvA-dM-jH8"/>
+                            <constraint firstItem="5UL-A0-xZd" firstAttribute="bottom" secondItem="6ml-Qb-1rW" secondAttribute="bottom" constant="28" id="L1K-S4-J8k"/>
+                            <constraint firstItem="BXy-uV-I5h" firstAttribute="leading" secondItem="PkB-Uw-obN" secondAttribute="leadingMargin" id="NCD-U8-5Yc"/>
+                            <constraint firstItem="6ml-Qb-1rW" firstAttribute="leading" secondItem="sXH-hu-Qjf" secondAttribute="trailing" constant="-162" id="ZPN-Hf-Ygy"/>
+                            <constraint firstItem="UUI-ZA-jwk" firstAttribute="top" secondItem="5UL-A0-xZd" secondAttribute="top" constant="14" id="aLN-Ue-aNu"/>
+                            <constraint firstItem="BXy-uV-I5h" firstAttribute="centerX" secondItem="UUI-ZA-jwk" secondAttribute="centerX" id="nlK-Ef-Qmp"/>
+                            <constraint firstItem="BXy-uV-I5h" firstAttribute="top" secondItem="PkB-Uw-obN" secondAttribute="top" constant="167" id="pOA-Qo-VGP"/>
+                            <constraint firstItem="5UL-A0-xZd" firstAttribute="trailing" secondItem="6ml-Qb-1rW" secondAttribute="trailing" constant="129" id="qST-CO-4F8"/>
+                            <constraint firstItem="5UL-A0-xZd" firstAttribute="bottom" secondItem="sXH-hu-Qjf" secondAttribute="bottom" constant="96" id="yZZ-PK-jLT"/>
+                            <constraint firstItem="6ml-Qb-1rW" firstAttribute="leading" secondItem="5UL-A0-xZd" secondAttribute="leading" constant="136" id="ykd-hA-0OJ"/>
                             <constraint firstItem="sXH-hu-Qjf" firstAttribute="width" secondItem="6ml-Qb-1rW" secondAttribute="width" id="zu9-cz-pOZ"/>
                         </constraints>
                     </view>
@@ -181,7 +227,7 @@ We hope that you and your child enjoy using our app to learn the alphabet! If yo
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eDI-IW-P68" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="920" y="763"/>
+            <point key="canvasLocation" x="919.62616822429902" y="762.63498920086397"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GVS-mv-vKt">
