@@ -13,6 +13,10 @@ class LearnViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Background
+        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: )!)
+
         //A
         let Atap = UITapGestureRecognizer(target: self, action: #selector(self.Atap))
         A.addGestureRecognizer(Atap)
