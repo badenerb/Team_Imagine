@@ -16,9 +16,7 @@ class ForParentsViewController: UIViewController {
 
 
     @IBAction func References(_ sender: Any) {
-        if let url = URL(string: "https://www.google.com"//Replace this with the references pdf in our github folder
-        )
-        {
+        if let url = URL(string: "https://github.com/badenerb/Team_Imagine/blob/main/References%20(1).pdf"){
             UIApplication.shared.open(url)
         }
     }
