@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RNX-JX-crh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RNX-JX-crh">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="triangles" translatesAutoresizingMaskIntoConstraints="NO" id="oZf-dd-b5Z">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <rect key="frame" x="0.0" y="0.0" width="427" height="925"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
@@ -474,14 +474,116 @@
                     <view key="view" contentMode="scaleToFill" id="xGt-mR-4ea">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mEQ-uG-d9r">
+                                <rect key="frame" x="20" y="399" width="193" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="30O-Oe-arl" appends="YES" id="3xG-xk-HKi"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lut-yp-ttv">
+                                <rect key="frame" x="215" y="399" width="193" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="tcb-FI-cEv" appends="YES" id="Avk-mv-ckg"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nmV-bG-HvU">
+                                <rect key="frame" x="20" y="593" width="193" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="I92-nb-rDx" appends="YES" id="HOe-fv-bff"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="psy-wJ-EfW">
+                                <rect key="frame" x="215" y="593" width="193" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="2fT-CP-41O" appends="YES" id="zOK-CE-P8f"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VqL-hF-Dcz">
+                                <rect key="frame" x="20" y="101" width="388" height="270"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="volume.3" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="button:" destination="y2p-YV-h34" eventType="touchUpInside" id="cgK-iq-t5z"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="GHb-pt-Ur2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="brf-TS-zfl"/>
+                    <connections>
+                        <outlet property="letter1" destination="mEQ-uG-d9r" id="i3M-Ig-cCe"/>
+                        <outlet property="letter2" destination="lut-yp-ttv" id="7hN-q4-Xn4"/>
+                        <outlet property="letter3" destination="nmV-bG-HvU" id="R8E-Ue-w0z"/>
+                        <outlet property="letter4" destination="psy-wJ-EfW" id="tZB-zH-Fna"/>
+                        <segue destination="Bb1-i7-5Mt" kind="show" identifier="t1" id="yAm-2k-CqV"/>
+                        <segue destination="Bb1-i7-5Mt" kind="show" identifier="incorrect" id="DUA-HH-2nx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cVB-ii-dsO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="30O-Oe-arl">
+                    <connections>
+                        <action selector="l1tap:" destination="y2p-YV-h34" id="zSe-mA-40R"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="tcb-FI-cEv">
+                    <connections>
+                        <action selector="l2tap:" destination="y2p-YV-h34" id="D2b-wp-ZIo"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="I92-nb-rDx">
+                    <connections>
+                        <action selector="l3tap:" destination="y2p-YV-h34" id="EAd-1H-hjF"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="2fT-CP-41O">
+                    <connections>
+                        <action selector="l4tap:" destination="y2p-YV-h34" id="kZD-x8-gca"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1880" y="524"/>
+            <point key="canvasLocation" x="1879.9065420560746" y="523.54211663066963"/>
+        </scene>
+        <!--ResultVC View Controller-->
+        <scene sceneID="jr5-dJ-7Uc">
+            <objects>
+                <viewController id="Bb1-i7-5Mt" customClass="ResultVCViewController" customModule="Team_Imagine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qHB-aP-pcx" customClass="ResultViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmp-t8-NeB">
+                                <rect key="frame" x="68" y="149" width="293" height="217"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bDm-5m-gWZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outlet property="label" destination="xmp-t8-NeB" id="uI0-hb-NsG"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="d3v-xD-RFw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rnr-I9-IJe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2864" y="524"/>
         </scene>
         <!--For Parents View Controller-->
         <scene sceneID="yjW-mp-CZc">
@@ -568,6 +670,9 @@ We hope that you and your child enjoy using our app to learn the alphabet! If yo
             <point key="canvasLocation" x="19.626168224299064" y="3.2397408207343417"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="DUA-HH-2nx"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="A" width="168" height="201"/>
         <image name="B" width="162" height="203"/>
@@ -598,6 +703,7 @@ We hope that you and your child enjoy using our app to learn the alphabet! If yo
         <image name="Z" width="141" height="170"/>
         <image name="pastelBg.png" width="256" height="219"/>
         <image name="triangles" width="1280" height="718"/>
+        <image name="volume.3" catalog="system" width="128" height="84"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
