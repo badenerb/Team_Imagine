@@ -125,7 +125,6 @@ class LearnViewController: UIViewController {
     
     // Letter Sound Functions
     @IBAction func Atap(_ sender: UITapGestureRecognizer) {
-    //play A
         playA()
     }
     @IBAction func Btap(_ sender: UITapGestureRecognizer) {

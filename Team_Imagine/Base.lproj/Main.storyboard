@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="triangles" translatesAutoresizingMaskIntoConstraints="NO" id="oZf-dd-b5Z">
-                                <rect key="frame" x="0.0" y="0.0" width="427" height="925"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
@@ -573,12 +573,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iU0-GQ-qHm">
+                                <rect key="frame" x="89" y="366.66666666666669" width="250" height="250.00000000000006"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="ZMU-Q0-Q9n"/>
+                                    <constraint firstAttribute="width" constant="250" id="c0B-aK-K6W"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bDm-5m-gWZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iU0-GQ-qHm" firstAttribute="centerY" secondItem="bDm-5m-gWZ" secondAttribute="centerY" id="0b3-Ci-tLp"/>
+                            <constraint firstItem="iU0-GQ-qHm" firstAttribute="centerX" secondItem="bDm-5m-gWZ" secondAttribute="centerX" id="HQz-cf-Nfp"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="d3v-xD-RFw"/>
                     <connections>
+                        <outlet property="imageSign" destination="iU0-GQ-qHm" id="fq6-7H-Nl0"/>
                         <outlet property="label" destination="xmp-t8-NeB" id="rUS-mC-GOs"/>
                     </connections>
                 </viewController>

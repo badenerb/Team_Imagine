@@ -35,6 +35,8 @@
 		BD27464629F1C02B00C61D8F /* 2023_03_30_H.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD27462C29F1C02B00C61D8F /* 2023_03_30_H.mp3 */; };
 		BD27464829F1C3C500C61D8F /* pastelBg.png in Resources */ = {isa = PBXBuildFile; fileRef = BD27464729F1C3C500C61D8F /* pastelBg.png */; };
 		BD9E06D729F5EA4B00C9FB92 /* ResultViewVCController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9E06D629F5EA4B00C9FB92 /* ResultViewVCController.swift */; };
+		BD9E06DA29F5F89700C9FB92 /* sadEmotion.png in Resources */ = {isa = PBXBuildFile; fileRef = BD9E06D829F5F89600C9FB92 /* sadEmotion.png */; };
+		BD9E06DB29F5F89700C9FB92 /* happyEmotion.png in Resources */ = {isa = PBXBuildFile; fileRef = BD9E06D929F5F89700C9FB92 /* happyEmotion.png */; };
 		BDA6542D29DD2C59005CE2EF /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA6542C29DD2C59005CE2EF /* QuizViewController.swift */; };
 		BDC2FEC629CE52E800E841AA /* ForParentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC2FEC529CE52E800E841AA /* ForParentsViewController.swift */; };
 		BDC3F86A29B6AA1600E619C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC3F86929B6AA1600E619C0 /* AppDelegate.swift */; };
@@ -75,6 +77,8 @@
 		BD27462C29F1C02B00C61D8F /* 2023_03_30_H.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 2023_03_30_H.mp3; sourceTree = "<group>"; };
 		BD27464729F1C3C500C61D8F /* pastelBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pastelBg.png; sourceTree = "<group>"; };
 		BD9E06D629F5EA4B00C9FB92 /* ResultViewVCController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewVCController.swift; sourceTree = "<group>"; };
+		BD9E06D829F5F89600C9FB92 /* sadEmotion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sadEmotion.png; sourceTree = "<group>"; };
+		BD9E06D929F5F89700C9FB92 /* happyEmotion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happyEmotion.png; sourceTree = "<group>"; };
 		BDA6542C29DD2C59005CE2EF /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		BDC2FEC529CE52E800E841AA /* ForParentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForParentsViewController.swift; sourceTree = "<group>"; };
 		BDC3F86629B6AA1600E619C0 /* Team_Imagine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Team_Imagine.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +133,8 @@
 				BDC3F87229B6AA1900E619C0 /* Assets.xcassets */,
 				BDC3F87429B6AA1900E619C0 /* LaunchScreen.storyboard */,
 				BDC3F87729B6AA1900E619C0 /* Info.plist */,
+				BD9E06D929F5F89700C9FB92 /* happyEmotion.png */,
+				BD9E06D829F5F89600C9FB92 /* sadEmotion.png */,
 				BD27464729F1C3C500C61D8F /* pastelBg.png */,
 				BD27462229F1C02A00C61D8F /* 2023_03_30_A.mp3 */,
 				BD27461C29F1C02A00C61D8F /* 2023_03_30_B.mp3 */,
@@ -218,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD9E06DB29F5F89700C9FB92 /* happyEmotion.png in Resources */,
 				BD27463629F1C02B00C61D8F /* 2023_03_30_B.mp3 in Resources */,
 				BD27464829F1C3C500C61D8F /* pastelBg.png in Resources */,
 				BD27463929F1C02B00C61D8F /* 2023_03_30_Y.mp3 in Resources */,
@@ -245,6 +252,7 @@
 				BD27464329F1C02B00C61D8F /* 2023_03_30_L.mp3 in Resources */,
 				BD27463429F1C02B00C61D8F /* 2023_03_30_O.mp3 in Resources */,
 				BD27463029F1C02B00C61D8F /* 2023_03_30_C.mp3 in Resources */,
+				BD9E06DA29F5F89700C9FB92 /* sadEmotion.png in Resources */,
 				BD27463529F1C02B00C61D8F /* 2023_03_30_Z.mp3 in Resources */,
 				BD27463E29F1C02B00C61D8F /* 2023_03_30_I.mp3 in Resources */,
 				BD27463129F1C02B00C61D8F /* 2023_03_30_W.mp3 in Resources */,
