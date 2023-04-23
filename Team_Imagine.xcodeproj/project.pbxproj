@@ -34,6 +34,7 @@
 		BD27464529F1C02B00C61D8F /* 2023_03_30_K.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD27462B29F1C02B00C61D8F /* 2023_03_30_K.mp3 */; };
 		BD27464629F1C02B00C61D8F /* 2023_03_30_H.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD27462C29F1C02B00C61D8F /* 2023_03_30_H.mp3 */; };
 		BD27464829F1C3C500C61D8F /* pastelBg.png in Resources */ = {isa = PBXBuildFile; fileRef = BD27464729F1C3C500C61D8F /* pastelBg.png */; };
+		BD9E06D729F5EA4B00C9FB92 /* ResultViewVCController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9E06D629F5EA4B00C9FB92 /* ResultViewVCController.swift */; };
 		BDA6542D29DD2C59005CE2EF /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA6542C29DD2C59005CE2EF /* QuizViewController.swift */; };
 		BDC2FEC629CE52E800E841AA /* ForParentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC2FEC529CE52E800E841AA /* ForParentsViewController.swift */; };
 		BDC3F86A29B6AA1600E619C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC3F86929B6AA1600E619C0 /* AppDelegate.swift */; };
@@ -73,6 +74,7 @@
 		BD27462B29F1C02B00C61D8F /* 2023_03_30_K.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 2023_03_30_K.mp3; sourceTree = "<group>"; };
 		BD27462C29F1C02B00C61D8F /* 2023_03_30_H.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 2023_03_30_H.mp3; sourceTree = "<group>"; };
 		BD27464729F1C3C500C61D8F /* pastelBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pastelBg.png; sourceTree = "<group>"; };
+		BD9E06D629F5EA4B00C9FB92 /* ResultViewVCController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewVCController.swift; sourceTree = "<group>"; };
 		BDA6542C29DD2C59005CE2EF /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		BDC2FEC529CE52E800E841AA /* ForParentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForParentsViewController.swift; sourceTree = "<group>"; };
 		BDC3F86629B6AA1600E619C0 /* Team_Imagine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Team_Imagine.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +124,7 @@
 				BDA6542C29DD2C59005CE2EF /* QuizViewController.swift */,
 				BDC3F86B29B6AA1600E619C0 /* SceneDelegate.swift */,
 				BDC3F86D29B6AA1600E619C0 /* ViewController.swift */,
+				BD9E06D629F5EA4B00C9FB92 /* ResultViewVCController.swift */,
 				BDC3F86F29B6AA1600E619C0 /* Main.storyboard */,
 				BDC3F87229B6AA1900E619C0 /* Assets.xcassets */,
 				BDC3F87429B6AA1900E619C0 /* LaunchScreen.storyboard */,
@@ -255,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD9E06D729F5EA4B00C9FB92 /* ResultViewVCController.swift in Sources */,
 				BDC2FEC629CE52E800E841AA /* ForParentsViewController.swift in Sources */,
 				BDA6542D29DD2C59005CE2EF /* QuizViewController.swift in Sources */,
 				BDC3F86E29B6AA1600E619C0 /* ViewController.swift in Sources */,

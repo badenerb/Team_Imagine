@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RNX-JX-crh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RNX-JX-crh">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -561,7 +562,7 @@
         <scene sceneID="jr5-dJ-7Uc">
             <objects>
                 <viewController id="Bb1-i7-5Mt" customClass="ResultVCViewController" customModule="Team_Imagine" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qHB-aP-pcx" customClass="ResultViewController">
+                    <view key="view" contentMode="scaleToFill" id="qHB-aP-pcx">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -575,11 +576,11 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bDm-5m-gWZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <connections>
-                            <outlet property="label" destination="xmp-t8-NeB" id="uI0-hb-NsG"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="d3v-xD-RFw"/>
+                    <connections>
+                        <outlet property="label" destination="xmp-t8-NeB" id="rUS-mC-GOs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rnr-I9-IJe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -671,7 +672,7 @@ We hope that you and your child enjoy using our app to learn the alphabet! If yo
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="DUA-HH-2nx"/>
+        <segue reference="yAm-2k-CqV"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="A" width="168" height="201"/>
