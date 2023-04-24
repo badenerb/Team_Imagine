@@ -21,6 +21,7 @@ class QuizViewController: UIViewController {
         super.viewDidLoad()
         newNums()
         refresh()
+        play()
         
 //        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "pastelBg.png")!)
 
