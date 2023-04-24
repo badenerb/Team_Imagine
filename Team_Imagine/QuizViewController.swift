@@ -13,16 +13,17 @@ class QuizViewController: UIViewController {
     var score = 0
     var player: AVAudioPlayer!
     var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
-    let randomInt = Int.random(in: 3...21)
-    let smallRandInt = Int.random(in: 0...3)
+    var randomInt = Int.random(in: 3...21)
+    var smallRandInt = Int.random(in: 0...3)
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        newNums()
+        refresh()
         
-        
-        letter1.image = UIImage(named: letters[randomInt - smallRandInt])
-        letter2.image = UIImage(named: letters[randomInt - smallRandInt + 1])
-        letter3.image = UIImage(named: letters[randomInt - smallRandInt + 2])
-        letter4.image = UIImage(named: letters[randomInt - smallRandInt + 3])
+//        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "pastelBg.png")!)
+
         
         // Do any additional setup after loading the view.
         let l1t = UITapGestureRecognizer(target: self, action: #selector(self.l1tap))
@@ -67,39 +68,71 @@ class QuizViewController: UIViewController {
     
     @IBAction func l1tap() {
         i += 1
+
         if((randomInt - smallRandInt) == randomInt){
             score += 1
             performSegue(withIdentifier: "t1", sender: self)
         }
-        performSegue(withIdentifier: "incorrect", sender: self)
+        else{
+            performSegue(withIdentifier: "incorrect", sender: self)
+        }
+        newNums()
         
+        refresh()
     }
     @IBAction func l2tap() {
         i+=1
+
         if((randomInt - smallRandInt + 1) == randomInt){
             score += 1
             performSegue(withIdentifier: "t1", sender: self)
         }
-        performSegue(withIdentifier: "incorrect", sender: self)
+        else {
+            performSegue(withIdentifier: "incorrect", sender: self)
+        }
+        newNums()
+        refresh()
     }
     @IBAction func l3tap() {
         i+=1
+
         if((randomInt - smallRandInt + 2) == randomInt){
             score += 1
             performSegue(withIdentifier: "t1", sender: self)
         }
-        performSegue(withIdentifier: "incorrect", sender: self)
+        else{
+            performSegue(withIdentifier: "incorrect", sender: self)
+        }
+        newNums()
+        refresh()
     }
     @IBAction func l4tap() {
         i+=1
+
         if((randomInt - smallRandInt + 3) == randomInt){
             score += 1
             performSegue(withIdentifier: "t1", sender: self)
         }
-        performSegue(withIdentifier: "incorrect", sender: self)
+        else{
+            performSegue(withIdentifier: "incorrect", sender: self)
+
+        }
+        newNums()
+        refresh()
     }
-    
+    func newNums(){
+        randomInt = Int.random(in: 3...21)
+        smallRandInt = Int.random(in: 0...3)
+    }
   
+    func refresh(){
+
+        letter1.image = UIImage(named: letters[randomInt - smallRandInt])
+        letter2.image = UIImage(named: letters[randomInt - smallRandInt + 1])
+        letter3.image = UIImage(named: letters[randomInt - smallRandInt + 2])
+        letter4.image = UIImage(named: letters[randomInt - smallRandInt + 3])
+        
+    }
   
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "t1" {
